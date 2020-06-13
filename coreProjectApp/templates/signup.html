@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Regestration form</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+<!--    {{form.as_p}}-->
+        <ul>
+            <li>Username {{form.username}}</li>
+            <li>First Name {{form.first_name}}</li>
+            <li>Last Name {{form.last_name}}</li>
+            <li>Email {{form.email}}</li>
+            <li> Mobile {{form.mobile}}</li>
+            <li>Password {{form.password1}}</li>
+            <li>Confirm password {{form.password2}}</li>
+        </ul>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
